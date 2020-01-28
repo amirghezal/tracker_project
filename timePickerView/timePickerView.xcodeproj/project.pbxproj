@@ -1,0 +1,371 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		29E17DD823E0412900D1C741 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E17DD723E0412900D1C741 /* AppDelegate.swift */; };
+		29E17DDA23E0412900D1C741 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E17DD923E0412900D1C741 /* SceneDelegate.swift */; };
+		29E17DDC23E0412900D1C741 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E17DDB23E0412900D1C741 /* ViewController.swift */; };
+		29E17DE123E0412D00D1C741 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29E17DE023E0412D00D1C741 /* Assets.xcassets */; };
+		29E17DE423E0412D00D1C741 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29E17DE223E0412D00D1C741 /* LaunchScreen.storyboard */; };
+		29E17DEC23E045EC00D1C741 /* K.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E17DEB23E045EC00D1C741 /* K.swift */; };
+		29E17DEE23E0492600D1C741 /* PickerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E17DED23E0492600D1C741 /* PickerModel.swift */; };
+		29E17DF523E0682C00D1C741 /* WeeklyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E17DF423E0682C00D1C741 /* WeeklyModel.swift */; };
+		29E17DF723E0792F00D1C741 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29E17DF623E0792F00D1C741 /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		29E17DD423E0412900D1C741 /* timePickerView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = timePickerView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		29E17DD723E0412900D1C741 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		29E17DD923E0412900D1C741 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		29E17DDB23E0412900D1C741 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		29E17DE023E0412D00D1C741 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		29E17DE323E0412D00D1C741 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		29E17DE523E0412D00D1C741 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29E17DEB23E045EC00D1C741 /* K.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K.swift; sourceTree = "<group>"; };
+		29E17DED23E0492600D1C741 /* PickerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerModel.swift; sourceTree = "<group>"; };
+		29E17DF423E0682C00D1C741 /* WeeklyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyModel.swift; sourceTree = "<group>"; };
+		29E17DF623E0792F00D1C741 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		29E17DD123E0412900D1C741 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		29E17DCB23E0412900D1C741 = {
+			isa = PBXGroup;
+			children = (
+				29E17DD623E0412900D1C741 /* timePickerView */,
+				29E17DD523E0412900D1C741 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		29E17DD523E0412900D1C741 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				29E17DD423E0412900D1C741 /* timePickerView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29E17DD623E0412900D1C741 /* timePickerView */ = {
+			isa = PBXGroup;
+			children = (
+				29E17DD723E0412900D1C741 /* AppDelegate.swift */,
+				29E17DD923E0412900D1C741 /* SceneDelegate.swift */,
+				29E17DEF23E04B1300D1C741 /* Model */,
+				29E17DF023E04B1B00D1C741 /* Controller */,
+				29E17DF123E04B2300D1C741 /* View */,
+				29E17DE023E0412D00D1C741 /* Assets.xcassets */,
+				29E17DE223E0412D00D1C741 /* LaunchScreen.storyboard */,
+				29E17DE523E0412D00D1C741 /* Info.plist */,
+			);
+			path = timePickerView;
+			sourceTree = "<group>";
+		};
+		29E17DEF23E04B1300D1C741 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				29E17DEB23E045EC00D1C741 /* K.swift */,
+				29E17DF423E0682C00D1C741 /* WeeklyModel.swift */,
+				29E17DED23E0492600D1C741 /* PickerModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		29E17DF023E04B1B00D1C741 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				29E17DDB23E0412900D1C741 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		29E17DF123E04B2300D1C741 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				29E17DF623E0792F00D1C741 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		29E17DD323E0412900D1C741 /* timePickerView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29E17DE823E0412D00D1C741 /* Build configuration list for PBXNativeTarget "timePickerView" */;
+			buildPhases = (
+				29E17DD023E0412900D1C741 /* Sources */,
+				29E17DD123E0412900D1C741 /* Frameworks */,
+				29E17DD223E0412900D1C741 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = timePickerView;
+			productName = timePickerView;
+			productReference = 29E17DD423E0412900D1C741 /* timePickerView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29E17DCC23E0412900D1C741 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Амир Гезаль";
+				TargetAttributes = {
+					29E17DD323E0412900D1C741 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = 29E17DCF23E0412900D1C741 /* Build configuration list for PBXProject "timePickerView" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 29E17DCB23E0412900D1C741;
+			productRefGroup = 29E17DD523E0412900D1C741 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				29E17DD323E0412900D1C741 /* timePickerView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		29E17DD223E0412900D1C741 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29E17DE423E0412D00D1C741 /* LaunchScreen.storyboard in Resources */,
+				29E17DE123E0412D00D1C741 /* Assets.xcassets in Resources */,
+				29E17DF723E0792F00D1C741 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		29E17DD023E0412900D1C741 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29E17DF523E0682C00D1C741 /* WeeklyModel.swift in Sources */,
+				29E17DEE23E0492600D1C741 /* PickerModel.swift in Sources */,
+				29E17DDC23E0412900D1C741 /* ViewController.swift in Sources */,
+				29E17DEC23E045EC00D1C741 /* K.swift in Sources */,
+				29E17DD823E0412900D1C741 /* AppDelegate.swift in Sources */,
+				29E17DDA23E0412900D1C741 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		29E17DE223E0412D00D1C741 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29E17DE323E0412D00D1C741 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		29E17DE623E0412D00D1C741 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		29E17DE723E0412D00D1C741 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		29E17DE923E0412D00D1C741 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8KK837P6CF;
+				INFOPLIST_FILE = timePickerView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gezalamir.timePickerView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		29E17DEA23E0412D00D1C741 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8KK837P6CF;
+				INFOPLIST_FILE = timePickerView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gezalamir.timePickerView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		29E17DCF23E0412900D1C741 /* Build configuration list for PBXProject "timePickerView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29E17DE623E0412D00D1C741 /* Debug */,
+				29E17DE723E0412D00D1C741 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		29E17DE823E0412D00D1C741 /* Build configuration list for PBXNativeTarget "timePickerView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29E17DE923E0412D00D1C741 /* Debug */,
+				29E17DEA23E0412D00D1C741 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29E17DCC23E0412900D1C741 /* Project object */;
+}
