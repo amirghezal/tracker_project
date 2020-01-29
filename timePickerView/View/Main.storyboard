@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WfI-lf-h64">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="SbY-aJ-WVB">
+            <objects>
+                <viewController id="WfI-lf-h64" customClass="ViewController" customModule="timePickerView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ix4-Kb-Aao">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="C3G-fQ-X2E">
+                                <rect key="frame" x="47" y="321" width="320" height="254"/>
+                                <subviews>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cdB-CH-nv4">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="216"/>
+                                    </pickerView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="59" translatesAutoresizingMaskIntoConstraints="NO" id="Qhi-vt-KPZ">
+                                        <rect key="frame" x="95" y="224" width="130" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KMb-wA-ys9">
+                                                <rect key="frame" x="0.0" y="0.0" width="34" height="30"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                                <state key="normal" title="Back"/>
+                                                <connections>
+                                                    <action selector="backButtonPressed:" destination="WfI-lf-h64" eventType="touchUpInside" id="4eq-M9-XWm"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QY5-SB-V5K">
+                                                <rect key="frame" x="93" y="0.0" width="37" height="30"/>
+                                                <state key="normal" title="Done"/>
+                                                <connections>
+                                                    <action selector="doneButtonPressed:" destination="WfI-lf-h64" eventType="touchUpInside" id="qNK-Nr-VGf"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="sij-i1-rJz">
+                                <rect key="frame" x="102" y="398" width="210" height="100"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="JTB-3i-6ju">
+                                        <rect key="frame" x="0.0" y="0.0" width="210" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oNf-Lb-U5r">
+                                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                <state key="normal" title="S"/>
+                                                <connections>
+                                                    <action selector="WeekDaySelected:" destination="WfI-lf-h64" eventType="touchUpInside" id="uus-IH-tSE"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="icE-D7-D5l">
+                                                <rect key="frame" x="30" y="0.0" width="30" height="30"/>
+                                                <state key="normal" title="M"/>
+                                                <connections>
+                                                    <action selector="WeekDaySelected:" destination="WfI-lf-h64" eventType="touchUpInside" id="5ay-HO-23X"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ash-gf-wad">
+                                                <rect key="frame" x="60" y="0.0" width="30" height="30"/>
+                                                <state key="normal" title="T"/>
+                                                <connections>
+                                                    <action selector="WeekDaySelected:" destination="WfI-lf-h64" eventType="touchUpInside" id="UAi-tv-1Ie"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W1P-Fe-NWS">
+                                                <rect key="frame" x="90" y="0.0" width="30" height="30"/>
+                                                <state key="normal" title="W"/>
+                                                <connections>
+                                                    <action selector="WeekDaySelected:" destination="WfI-lf-h64" eventType="touchUpInside" id="4MU-lT-t9y"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gez-Ta-7ra">
+                                                <rect key="frame" x="120" y="0.0" width="30" height="30"/>
+                                                <state key="normal" title="T"/>
+                                                <connections>
+                                                    <action selector="WeekDaySelected:" destination="WfI-lf-h64" eventType="touchUpInside" id="Cip-5r-9EN"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tbG-oO-6P8">
+                                                <rect key="frame" x="150" y="0.0" width="30" height="30"/>
+                                                <state key="normal" title="F"/>
+                                                <connections>
+                                                    <action selector="WeekDaySelected:" destination="WfI-lf-h64" eventType="touchUpInside" id="nYj-bP-h7E"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Xx-MR-cqd">
+                                                <rect key="frame" x="180" y="0.0" width="30" height="30"/>
+                                                <state key="normal" title="S"/>
+                                                <connections>
+                                                    <action selector="WeekDaySelected:" destination="WfI-lf-h64" eventType="touchUpInside" id="MKT-0e-VUs"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="46" translatesAutoresizingMaskIntoConstraints="NO" id="oyS-17-cut">
+                                        <rect key="frame" x="46.666666666666657" y="70" width="117" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tee-qV-IRd">
+                                                <rect key="frame" x="0.0" y="0.0" width="34" height="30"/>
+                                                <state key="normal" title="Back"/>
+                                                <connections>
+                                                    <action selector="WBackButtonPressed:" destination="WfI-lf-h64" eventType="touchUpInside" id="rJP-Ti-u3B"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3VA-jQ-NcJ">
+                                                <rect key="frame" x="80" y="0.0" width="37" height="30"/>
+                                                <state key="normal" title="Done"/>
+                                                <connections>
+                                                    <action selector="WDoneButtonPressed:" destination="WfI-lf-h64" eventType="touchUpInside" id="CtI-mB-qE3"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Bb2-hK-aRj">
+                                <rect key="frame" x="166.66666666666666" y="430.66666666666669" width="81" height="35"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DaW-Hb-JJK">
+                                        <rect key="frame" x="0.0" y="0.0" width="81" height="35"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <state key="normal" title="EveryDay"/>
+                                        <connections>
+                                            <action selector="choser:" destination="WfI-lf-h64" eventType="touchUpInside" id="dS3-dK-Jxn"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="Fqn-aG-EtB">
+                                <rect key="frame" x="135" y="325" width="144" height="246"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="Djz-4J-NXs">
+                                        <rect key="frame" x="0.0" y="0.0" width="144" height="195"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ly6-fc-heX">
+                                                <rect key="frame" x="0.0" y="0.0" width="144" height="30"/>
+                                                <state key="normal" title="Every day"/>
+                                                <connections>
+                                                    <action selector="DaySetter:" destination="WfI-lf-h64" eventType="touchUpInside" id="OUT-18-vaT"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ggM-80-z8U">
+                                                <rect key="frame" x="0.0" y="55" width="144" height="30"/>
+                                                <state key="normal" title="Every week"/>
+                                                <connections>
+                                                    <action selector="WeekSetter:" destination="WfI-lf-h64" eventType="touchUpInside" id="jwT-Fz-Q8f"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dJL-xg-lAg">
+                                                <rect key="frame" x="0.0" y="110" width="144" height="30"/>
+                                                <state key="normal" title="Every month"/>
+                                                <connections>
+                                                    <action selector="MonthSetter:" destination="WfI-lf-h64" eventType="touchUpInside" id="EVL-MN-lia"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ab-wC-JQK">
+                                                <rect key="frame" x="0.0" y="165" width="144" height="30"/>
+                                                <state key="normal" title="Your nterval"/>
+                                                <connections>
+                                                    <action selector="CustomSetter:" destination="WfI-lf-h64" eventType="touchUpInside" id="XWt-VC-wtg"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="73" translatesAutoresizingMaskIntoConstraints="NO" id="rBw-Vl-UaL">
+                                        <rect key="frame" x="0.0" y="216" width="144" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xEk-J2-SyK">
+                                                <rect key="frame" x="0.0" y="0.0" width="34" height="30"/>
+                                                <state key="normal" title="Back"/>
+                                                <connections>
+                                                    <action selector="BackButton:" destination="WfI-lf-h64" eventType="touchUpInside" id="Esp-xs-0cT"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d3U-0V-MbC">
+                                                <rect key="frame" x="107" y="0.0" width="37" height="30"/>
+                                                <state key="normal" title="Done"/>
+                                                <connections>
+                                                    <action selector="Donebutton:" destination="WfI-lf-h64" eventType="touchUpInside" id="GNG-XA-nw1"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Djz-4J-NXs" firstAttribute="centerX" secondItem="Fqn-aG-EtB" secondAttribute="centerX" id="94I-3j-FO8"/>
+                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a7T-eE-RWe">
+                                <rect key="frame" x="-10" y="224" width="434" height="638"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mb1-af-WvB">
+                                        <rect key="frame" x="194" y="20" width="46" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="kekpressed:" destination="WfI-lf-h64" eventType="touchUpInside" id="ydR-TN-IW1"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CkN-8n-71k">
+                                        <rect key="frame" x="63" y="58" width="309" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="04F-Xi-ad2" customClass="CalendarView" customModule="CalendarView">
+                                        <rect key="frame" x="20" y="120" width="394" height="498"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </view>
+                                </subviews>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Fqn-aG-EtB" firstAttribute="centerY" secondItem="Ix4-Kb-Aao" secondAttribute="centerY" id="1oJ-fX-61k"/>
+                            <constraint firstItem="C3G-fQ-X2E" firstAttribute="centerX" secondItem="Ix4-Kb-Aao" secondAttribute="centerX" id="7td-pl-F2t"/>
+                            <constraint firstItem="Bb2-hK-aRj" firstAttribute="centerX" secondItem="Ix4-Kb-Aao" secondAttribute="centerX" id="9hr-Lt-LXs"/>
+                            <constraint firstItem="C3G-fQ-X2E" firstAttribute="centerY" secondItem="Ix4-Kb-Aao" secondAttribute="centerY" id="czZ-lc-qiT"/>
+                            <constraint firstItem="sij-i1-rJz" firstAttribute="centerX" secondItem="Ix4-Kb-Aao" secondAttribute="centerX" id="hOC-5h-NH6"/>
+                            <constraint firstItem="Bb2-hK-aRj" firstAttribute="centerY" secondItem="Ix4-Kb-Aao" secondAttribute="centerY" id="sjy-2d-3K8"/>
+                            <constraint firstItem="sij-i1-rJz" firstAttribute="centerY" secondItem="Ix4-Kb-Aao" secondAttribute="centerY" id="u86-z3-Zj8"/>
+                            <constraint firstItem="Fqn-aG-EtB" firstAttribute="centerX" secondItem="Ix4-Kb-Aao" secondAttribute="centerX" id="vRS-mr-oj4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="I6p-5G-Lqc"/>
+                    </view>
+                    <connections>
+                        <outlet property="IntervalChoser" destination="Bb2-hK-aRj" id="Wsh-pa-vlK"/>
+                        <outlet property="IntervalsStackView" destination="Fqn-aG-EtB" id="bFo-1L-4da"/>
+                        <outlet property="Viewkek" destination="a7T-eE-RWe" id="jJ4-Em-khS"/>
+                        <outlet property="WeeklyPickerView" destination="sij-i1-rJz" id="78V-LO-8bE"/>
+                        <outlet property="calendar" destination="04F-Xi-ad2" id="NXo-os-ZSq"/>
+                        <outlet property="customIntervalPicker" destination="cdB-CH-nv4" id="hhb-Xy-lmt"/>
+                        <outlet property="customPickerView" destination="C3G-fQ-X2E" id="BMZ-tM-TCf"/>
+                        <outlet property="kek" destination="mb1-af-WvB" id="kXW-eY-Vwk"/>
+                        <outlet property="label" destination="CkN-8n-71k" id="cZf-Ju-uUi"/>
+                        <outletCollection property="WeeklyCollection" destination="oNf-Lb-U5r" collectionClass="NSMutableArray" id="rap-Ho-rZu"/>
+                        <outletCollection property="WeeklyCollection" destination="icE-D7-D5l" collectionClass="NSMutableArray" id="EoP-fw-Vp9"/>
+                        <outletCollection property="WeeklyCollection" destination="ash-gf-wad" collectionClass="NSMutableArray" id="ZOG-JV-bdy"/>
+                        <outletCollection property="WeeklyCollection" destination="W1P-Fe-NWS" collectionClass="NSMutableArray" id="wFT-IV-7WC"/>
+                        <outletCollection property="WeeklyCollection" destination="Gez-Ta-7ra" collectionClass="NSMutableArray" id="ZBh-EG-4QT"/>
+                        <outletCollection property="WeeklyCollection" destination="tbG-oO-6P8" collectionClass="NSMutableArray" id="X7q-j4-iLW"/>
+                        <outletCollection property="WeeklyCollection" destination="7Xx-MR-cqd" collectionClass="NSMutableArray" id="h5R-xX-9kK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Bd-i4-evN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2686.9565217391305" y="-179.46428571428569"/>
+        </scene>
+    </scenes>
+</document>
