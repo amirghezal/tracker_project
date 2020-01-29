@@ -13,32 +13,6 @@ import SwiftMoment
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var label: UILabel!
-    var currentMoment: Moment?
-    var arrayofdate = [Moment]()
-    @IBAction func kekpressed(_ sender: UIButton) {
-        var isMatched = false
-        var index : Int?
-        
-        if let i = MonthModel.checkForMatch(&isMatched, &index, arrayofdate, currentMoment) {
-            arrayofdate.remove(at: i)
-            label.text = "removed \(currentMoment!.format("MMMM d"))"
-        } else {
-            arrayofdate.append(currentMoment!)
-            label.text = "added \(currentMoment!.format("MMMM d"))"
-        }
-    }
-    
-    
-    @IBOutlet weak var Viewkek: UIView!
-    @IBOutlet weak var kek: UIButton!
-    @IBOutlet weak var calendar: CalendarView!
-    
-    
-    
-    
-    
-    
     
     
     
@@ -49,6 +23,28 @@ class ViewController: UIViewController {
     
     //IntervalsView
     @IBOutlet weak var IntervalsStackView: UIStackView!
+    
+    //MonthlyView
+    //properties
+    
+    var currentMoment: Moment?
+    var arrayofdate = [Moment]()
+    var isMatched = false
+    var index : Int?
+    //MontlyViewOutlets/actions
+    @IBOutlet weak var calendar: CalendarView!
+    @IBOutlet weak var MonthlyView: UIView!
+    @IBOutlet weak var AddedOrRemovedLabel: UILabel!
+    @IBOutlet weak var AddOrRemove: UIButton!
+    @IBAction func AddOrRemovePressed(_ sender: UIButton) {
+           if let i = MonthModel.checkForMatch(&isMatched, &index, arrayofdate, currentMoment) {
+               arrayofdate.remove(at: i)
+               AddedOrRemovedLabel.text = "removed \(currentMoment!.format("MMMM d"))"
+           } else {
+               arrayofdate.append(currentMoment!)
+               AddedOrRemovedLabel.text = "added \(currentMoment!.format("MMMM d"))"
+           }
+       }
     
     //WeeklyPickerView outlets
     @IBOutlet weak var WeeklyPickerView: UIStackView!
@@ -69,12 +65,8 @@ class ViewController: UIViewController {
         customPickerView.isHidden = true
         WeeklyPickerView.isHidden = true
         IntervalsStackView.isHidden = true
-        Viewkek.isHidden = true
-        Timer.scheduledTimer(withTimeInterval: 10, repeats: false) { (timer) in
-            for i in self.arrayofdate {
-                print(i.format("MMMM d"))
-            }
-        }
+        MonthlyView.isHidden = true
+        
     }
     
     //IntervalChoser
@@ -94,7 +86,7 @@ class ViewController: UIViewController {
     
     @IBAction func MonthSetter(_ sender: UIButton) {
         IntervalsStackView.isHidden = true
-        Viewkek.isHidden = false
+        MonthlyView.isHidden = false
     }
     @IBAction func CustomSetter(_ sender: UIButton) {
         K.changeView(IntervalsStackView, customPickerView)
@@ -159,6 +151,7 @@ extension ViewController : UIPickerViewDelegate {
     }
 }
 
+//Calendar delegate
 extension ViewController: CalendarViewDelegate {
     func calendarDidSelectDate(date: Moment) {
         self.currentMoment = date
